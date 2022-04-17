@@ -8,7 +8,7 @@
         <v-hover v-slot=" { hover }">
           <v-card
             outlined
-            :elevation="hover ? 16: 2"
+            :elevation="hover ? 16: 6"
             :class="{ 'on-hover': hover }"
             :color="hover ? 'surfacevariant': 'surface'"
             height="100%"
@@ -49,7 +49,7 @@
           outlined
           :color="hover ? 'surfacevariant': 'surface'"
           :class="{ 'on-hover': hover }"
-          :elevation="hover ? 16: 2"
+          :elevation="hover ? 16: 6"
           height="100%">
           <v-card-title>Learn</v-card-title>
           <v-card-text>
