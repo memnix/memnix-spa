@@ -1,10 +1,11 @@
 <template>
   <v-col class="text-center">
     <v-card
-      class="overflow-auto mx-auto mt-5 mb-10 rounded-xl"
+      class="overflow-auto mx-auto mt-5 mb-10 rounded-xl elevation-16"
       max-width="100%"
       max-height="550"
       color="surface"
+
     >
       <v-img
         v-if="card.card_image !== ''"
@@ -83,7 +84,7 @@
     <v-container v-else>
       <v-row>
         <v-col v-for="(n, index) in items" :key="index" cols="12" sm="6">
-          <v-btn color="secondary" x-large block @click="buttonAnswer(n)">{{
+          <v-btn color="secondary" class="elevation-14 " x-large block @click="buttonAnswer(n)">{{
               n
             }}</v-btn>
         </v-col>
