@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card  color="background">
     <v-card-title class="text-h5">
       {{ $t('unsubscribe_deck_question') }}
     </v-card-title>
