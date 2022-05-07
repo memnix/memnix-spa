@@ -6,7 +6,7 @@
       persistent
       @keydown.enter="closeResultDialog"
     >
-      <ResultDialog :res="res" @closeResultDialog="closeResultDialog" />
+      <DialogResult :res="res" @closeResultDialog="closeResultDialog" />
       <ResultProgressLinear
         ref="resultProgressLinear"
         @closeResultDialog="closeResultDialog"

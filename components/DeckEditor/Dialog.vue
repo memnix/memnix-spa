@@ -261,7 +261,7 @@ import {
   deleteMCQAPI,
   getCardsAPI,
   getMCQSAPI,
-} from '../api/card.api'
+} from '../../api/card.api'
 import { Card, CardType, Deck, Mcq, McqType } from '~/types/types'
 
 export default Vue.extend({
