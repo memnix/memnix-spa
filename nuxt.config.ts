@@ -12,7 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Memnix Web App' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'google', content: 'notranslate' },
+      { name: 'googlebot', content: 'notranslate' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
