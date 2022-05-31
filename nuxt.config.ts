@@ -5,13 +5,22 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
 
   head: {
-    titleTemplate: '%s - Memnix',
+    titleTemplate: '%s - Spaced repetition web app',
     title: 'Memnix',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Memnix Web App' },
+      { hid: 'description', name: 'description', content: 'A spaced repetition learning system' },
+      { hid: 'og:title', property: 'og:title', content: 'Memnix' },
+      { hid: 'og:description', property: 'og:description', content: 'A spaced repetition learning system' },
+      { hid: 'og:image', property: 'og:image', content: '/icon.png' },
+      { hid: 'og:image:type', property: 'og:image:type', content: 'image/png' },
+      { hid: 'og:image:alt', property: 'og:image:alt', content: 'Memnix main page' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '512' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '512' },
+      { hid: 'og:url', property: 'og:url', content: 'https://memnix.app' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'googlebot', content: 'notranslate' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -100,11 +109,11 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
-      title: 'Memnix Web',
+      title: 'Memnix',
       author: 'CorentinGS',
     },
     manifest: {
-      name: 'Memnix Web',
+      name: 'Memnix - A spaced repetition learning system',
       short_name: 'Memnix',
       lang: 'en',
       display: 'standalone',
