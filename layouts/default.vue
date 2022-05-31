@@ -44,7 +44,7 @@
       </v-list>
       <template #append>
         <div class="pa-2">
-          <v-btn block class="oncolor--text" color="accent" @click="logout">
+          <v-btn block class="oncolor--text" color="secondary" @click="logout">
             {{ $t('logout') }}
           </v-btn>
         </div>

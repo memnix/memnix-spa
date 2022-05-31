@@ -53,9 +53,11 @@
       />
     </v-dialog>
 
-    <v-toolbar color="primarycontainer" flat mb-10>
+    <v-toolbar color="background" flat mb-10>
       <v-spacer></v-spacer>
-      <v-btn text x-large @click="createDeck"> {{ $t('create_deck') }} </v-btn>
+      <v-btn
+            text x-large elevation="24" outlined color="secondary"
+             @click="createDeck"> {{ $t('create_deck') }} </v-btn>
     </v-toolbar>
     <v-card-text>
       <v-row>

@@ -1,13 +1,11 @@
 <template>
   <v-progress-linear
-    class="mt-15"
+    class="mt-15 elevation-6"
     :value="(progress * 100) / total"
-    :buffer-value="(progressBuffer * 100) / total"
-    stream
     height="20"
-    background-color="error"
-    color="success"
-    background-opacity="0.7"
+    background-color="surfacevariant"
+    color="primary"
+    background-opacity="0.5"
   >
     <strong>{{ progress }} / {{total }}</strong>
   </v-progress-linear>
@@ -27,10 +25,6 @@ export default Vue.extend({
       type: Number,
       default: 0
     },
-    progressBuffer: {
-      type: Number,
-      default: 0
-    }
   }
 })
 </script>

@@ -14,19 +14,16 @@
   "linked": "Linked",
   "ok": "Ok",
   "quit": "Quit",
-
-  "welcome_index": "Welcome to the Memnix beta",
-  "presentation_index": "The scope of this beta is to test the functionality and algorithmic features.",
-  "more_info_index": "For more information on Memnix or to report a bug check out the",
+  "welcome_index": "Welcome to Memnix",
+  "presentation_index": "Memnix is a project that aims to create tools to facilitate learning for students by working in an organized way.",
+  "more_info_index": "This app is currently available as a beta and may change in the future. However, you are welcome to try it out and report any bugs you find or let us know if you have any suggestions to help us improving.",
   "thx_index": "Thank you for contributing to Memnix. A number of updates are to be implemented in the next few weeks. We will keep you updated on this matter.",
+  "index_contribute": "Memnix is currently available as a beta and may change in the future. We are looking for contributors to help us improve the app. We are looking for translators, developers and designer. If you are interested in contributing, please join us!",
   "memnix_team": "Memnix's team",
   "getting_started": "Getting Started",
-
   "create_deck": "Create a deck",
   "success_deck": "Success creating a deck !",
-
   "not_sub": "You are not sub to any deck yet",
-
   "enter_mail": "Enter your email",
   "enter_password": "Enter your password",
   "login": "Login",
@@ -39,7 +36,6 @@
   "password_required": "Password is required",
   "email_valid": "Must be a valid e-mail",
   "email_required": "E-mail is required",
-
   "enter_username": "Enter your username",
   "do_agree": "Do you agree to our TOS ?",
   "already_account": "Already got an account ?",
@@ -47,16 +43,13 @@
   "username_max_len": "Username must be at most 15 characters long",
   "username_min_len": "Username must be at least 4 characters long",
   "username_required": "Username is required",
-
   "no_more_cards": "You don't have more cards to play today !",
   "discover_decks": "Discover new decks",
   "practice": "Practice",
-
   "public": "Public",
   "private": "Private",
   "waiting_approval": "Waiting for approval",
   "sponsored": "Sponsored",
-
   "question": "Question",
   "type": "Type",
   "mcq": "MCQ",
@@ -68,7 +61,6 @@
   "format": "Format",
   "image": "Image",
   "required_field": "* indicates required field",
-
   "question_max_len": "Question must be at most 200 characters long",
   "question_min_len": "Question must be at least 5 character long",
   "question_required": "Question is required",
@@ -80,15 +72,10 @@
   "format_min_len": "Format must be at least 1 character long",
   "image_max_len": "Image must be at most 200 characters long",
   "image_min_len": "Image must be at least 1 character long",
-
   "enable_daily": "Enable daily",
-
   "create_card": "Create new card",
-
   "delete_card_confirmation": "Are you sure that you want to delete this card?",
-
   "delete_mcq_confirmation": "Are you sure that you want to delete this MCQ?",
-
   "create_mcq": "Create new MCQ",
   "success_edit_deck": "Success edited a deck !",
   "success_create_card": "Success creating a new card !",
@@ -97,29 +84,21 @@
   "success_edit_mcq": "Success edited a MCQ !",
   "success_delete_card": "Success deleted the card !",
   "success_delete_mcq": "Success deleted the MCQ !",
-
   "edit_card": "Edit a Card",
-
   "edit_mcq": "Edit a MCQ",
-
   "practice_session_over": "Practice session is finished !",
   "correct_answers": "Correct answers",
   "incorrect_answers": "Incorrect answers",
   "keep_practicing": "Keep practicing",
-
   "subscribe_now": "Subscribe Now",
-
   "search": "Search",
-
   "expected_answer": "Expected answer",
   "correct": "Correct",
   "incorrect": "Incorrect",
-
   "subscribe_deck_question": "Subscribe to this deck ?",
   "unsubscribe_deck_question": "Unsubscribe to this deck ?",
   "progression_not_deleted": "Your progression won't be deleted",
   "able_to_play": "You will be able to play it",
-
   "name": "Name",
   "answers": "Answers",
   "mcq_name_max_len": "Name must be at most 50 characters long",
@@ -128,7 +107,6 @@
   "answers_max_len": "Answers must be at most 500 characters long",
   "answers_min_len": "Answers must be at least 1 character long",
   "answers_required": "Answers is required",
-
   "deck_name_max_len": "Deck name must be at most 42 characters long",
   "deck_name_min_len": "Deck name must be at least 5 characters long",
   "deck_name_required": "Deck name is required",
@@ -137,7 +115,6 @@
   "deck_description_required": "Deck description is required",
   "deck_key_required": "A deck key is required",
   "deck_key_min_len": "Deck key must be 4 characters long",
-
   "logged_in": "Logged In",
   "logout": "Logout",
   "today": "Today",
@@ -148,7 +125,7 @@
   "publish_deck_warning": "Your deck will be reviewed by our team ! You will be notified by email once we have reviewed it.",
   "success_publish_deck": "Your request has been successfully sent to our team. You will be notified by email soon !",
   "success_subscribe_deck": "Success subscribing to a new deck",
-  "copied_content_to_clipboard" : "Copied content to clipboard",
+  "copied_content_to_clipboard": "Copied content to clipboard",
   "allow_sharing_deck": "Allow sharing deck",
   "private_key": "Private Key",
   "image_url": "Image URL",
@@ -157,7 +134,7 @@
   "not_valid_code": "This isn't a valid secret code !",
   "join_our_discord": "Join our discord !",
   "discord_meet_team": "Meet our team ",
-  "discord_contribution":  "Start contributing by joining our discord!",
+  "discord_contribution": "Start contributing by joining our discord!",
   "translate_memnix": "Translate Memnix",
   "translate_content": "We need your help to make Memnix available in more languages.",
   "meet_team_content": "You can meet our team and find out who is working on Memnix",

@@ -1,7 +1,7 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes[theme].background }">
     <v-main>
-      <v-container>
+      <v-container fluid>
         <Nuxt />
       </v-container>
     </v-main>
@@ -12,7 +12,7 @@
           flat
           tile
         >
-          <v-card-text class="">
+          <v-card-text>
             <v-btn class="mx-2" small fab href="https://www.instagram.com/memnix.app/">
               <v-icon>mdi-instagram</v-icon>
             </v-btn>

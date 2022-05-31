@@ -6,7 +6,7 @@
       persistent
       @keydown.enter="closeResultDialog"
     >
-      <ResultDialog :res="res" @closeResultDialog="closeResultDialog" />
+      <DialogResult :res="res" @closeResultDialog="closeResultDialog" />
       <ResultProgressLinear
         ref="resultProgressLinear"
         @closeResultDialog="closeResultDialog"
@@ -16,7 +16,6 @@
       <Card :card="card" :items="items" @postAnswer="postAnswer($event)" />
       <TodayProgressLinear
         :progress="progress"
-        :progress-buffer="progressBuffer"
         :total="total"
       />
     </v-container>
@@ -61,7 +60,6 @@ export default Vue.extend({
     delay: number
     progress: number
     total: number
-    progressBuffer: number
     loaderOverlay: boolean
     error: string
   } {
@@ -78,7 +76,6 @@ export default Vue.extend({
       delay: 0,
       progress: 0,
       total: 0,
-      progressBuffer: 0,
       loaderOverlay: false,
       error: '',
     }
@@ -112,7 +109,6 @@ export default Vue.extend({
           this.progress += 1
           this.delay = 30
         }
-        this.progressBuffer += 1
         this.resDialog = true
 
         while (!this.$refs.resultProgressLinear) {

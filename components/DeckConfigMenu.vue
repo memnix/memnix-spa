@@ -12,8 +12,8 @@
         <v-icon>mdi-cog</v-icon>
       </v-btn>
     </template>
-    <v-card>
-      <v-list>
+    <v-card  color="background">
+      <v-list  color="background">
         <v-list-item>
           <v-list-item-action>
             <v-switch v-model="daily" color="accent"></v-switch>

@@ -1,5 +1,5 @@
 <template>
-  <v-card color="surface">
+  <v-card color="background">
     <v-snackbar
       v-model="snackbar"
       :timeout="timeout"
@@ -16,40 +16,81 @@
         </v-btn>
       </template>
     </v-snackbar>
-    <v-toolbar color="primary-container">
-      <v-btn icon @click="closeDialog">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
-      <v-toolbar-title>{{ $t("subscribe_now") }} !</v-toolbar-title>
-    </v-toolbar>
-    <v-card-text class="mt-5">
-      <v-form @submit.prevent="validateAnswer">
-        <v-row>
-          <v-col cols="12">
-            <v-text-field
-              v-model="deckSecret"
-              maxlength="11"
-              color="primary"
-              outlined
-              shaped
-              counter
-              :label="$t('secret_code')"
-              background-color="surface"
-            ></v-text-field>
-          </v-col>
-        </v-row>
-      </v-form>
-    </v-card-text>
-    <v-card-actions>
-      <v-spacer></v-spacer>
-      <v-btn color="onbackground" text @click="closeDialog">
-        {{ $t('close') }}
-      </v-btn>
-      <v-btn color="primary" text x-large @click="validateAnswer">
-        {{ $t('ok') }}
-      </v-btn>
-    </v-card-actions>
+    <v-tabs background-color="background">
+      <v-tab>
+        <v-icon left> mdi-cog </v-icon>
+        Public Decks
+      </v-tab>
+      <v-tab>
+        <v-icon left> mdi-cards </v-icon>
+        Secret Code
+      </v-tab>
+
+      <v-tab-item transition="false">
+        <v-card color="background">
+          <v-card-text>
+            <v-form @submit.prevent="validateAnswer">
+              <v-row>
+                <v-col cols="12">
+                  <v-text-field
+                    v-model="deckSecret"
+                    maxlength="11"
+                    color="primary"
+                    outlined
+                    shaped
+                    counter
+                    :label="$t('secret_code')"
+                    background-color="surface"
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-form>
+          </v-card-text>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="onbackground" text @click="closeDialog">
+              {{ $t('close') }}
+            </v-btn>
+            <v-btn color="primary" text x-large @click="validateAnswer">
+              {{ $t('ok') }}
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-tab-item>
+      <v-tab-item transition="false">
+        <v-card color="background">
+        <v-card-text>
+          <v-form @submit.prevent="validateAnswer">
+            <v-row>
+              <v-col cols="12">
+                <v-text-field
+                  v-model="deckSecret"
+                  maxlength="11"
+                  color="primary"
+                  outlined
+                  shaped
+                  counter
+                  :label="$t('secret_code')"
+                  background-color="surface"
+                ></v-text-field>
+              </v-col>
+            </v-row>
+          </v-form>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="onbackground" text @click="closeDialog">
+            {{ $t('close') }}
+          </v-btn>
+          <v-btn color="primary" text x-large @click="validateAnswer">
+            {{ $t('ok') }}
+          </v-btn>
+        </v-card-actions>
+        </v-card>
+      </v-tab-item>
+    </v-tabs>
   </v-card>
+
 </template>
 
 <script lang="ts">
