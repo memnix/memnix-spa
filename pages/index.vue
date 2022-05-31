@@ -4,24 +4,13 @@
       <h1 class="text-center mb-12">{{ $t('welcome_index') }}</h1>
     </v-container>
     <v-card color="surface" class="mb-12 elevation-10">
-      <v-card-title>Contribute</v-card-title>
+      <v-card-title>Learn</v-card-title>
       <v-card-text>
         <p>
           {{ $t('presentation_index') }}
         </p>
         <p>
           {{ $t('more_info_index') }}
-          <a
-            href="https://github.com/memnix"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github</a
-          >.
-        </p>
-
-        <p>
-          {{ $t('thx_index') }}
         </p>
       </v-card-text>
       <v-card-actions>
@@ -34,30 +23,17 @@
 
     <v-card color="surface" class="elevation-10">
 
-      <v-card-title>Learn</v-card-title>
+      <v-card-title>Contribute</v-card-title>
       <v-card-text>
         <p>
-          {{ $t('presentation_index') }}
-        </p>
-        <p>
-          {{ $t('more_info_index') }}
-          <a
-            href="https://github.com/memnix"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github</a
-          >.
+          {{ $t('index_contribute') }}
         </p>
 
-        <p>
-          {{ $t('thx_index') }}
-        </p>
       </v-card-text>
       <v-card-actions>
         <v-spacer />
-        <v-btn x-large color="secondary" nuxt :to="localePath('/today')">
-          Jump right in
+        <v-btn x-large color="secondary" nuxt :to="localePath('/discord')">
+          Join us
         </v-btn>
       </v-card-actions>
     </v-card>
