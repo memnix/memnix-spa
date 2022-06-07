@@ -40,7 +40,7 @@
         max-width="600px"
         transition="dialog-bottom-transition"
       >
-        <UnsubDialog
+        <DialogUnsub
           @unsubToDeck="unsubToDeck"
           @closeDialogConfirmation="closeDialogConfirmation"
         />
