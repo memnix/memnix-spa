@@ -8,7 +8,7 @@
         max-width="600px"
         transition="dialog-bottom-transition"
       >
-        <SubDialog
+        <DialogSub
           @subToDeck="subToDeck"
           @closeDialogConfirmation="closeDialogConfirmation"
         />
